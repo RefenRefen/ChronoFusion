@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "chronofusion"
+version = "0.1.0"
+description = "Multi-scale Transformer + RL for time series"
+authors = ["Refen <abbasi.seyed.alireza@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+torch = "*"
+numpy = "^2.3.1"
+pandas = "^2.3.1"
+matplotlib = "^3.10.3"
+ice-fx = {path = "D:/Projects/k1/icefx"}
+findicator = {path = "D:/Projects/findicator"}
+ta-lib = "^0.6.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
