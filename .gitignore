@@ -308,3 +308,4 @@ build/
 # /test_notebook.ipynb
 # /test_env/
 # /requirements.txt
+test_env/converged_model.pth
