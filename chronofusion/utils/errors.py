@@ -30,3 +30,15 @@ class NotAvailableData(Exception):
     def __init__(self, index:int, data_frame_scale:str):
         message = f"There is no data point related to index={index} in the {data_frame_scale} dataframe."
         super().__init__(message)
+
+class WrongMode(Exception):
+    """Custom exception raised when functionality of class is called in wrong mode.
+        
+    """
+    def __init__(self, true_mode:str=None, wrong_mode:str=None):
+        if true_mode and wrong_mode:
+            message = f"You called this functionality in {wrong_mode} mode, wehreas this functionality is avilable only in {true_mode}!"
+        else:
+            message = f'Not available (data) for this mode!'
+            
+        super().__init__(message)
